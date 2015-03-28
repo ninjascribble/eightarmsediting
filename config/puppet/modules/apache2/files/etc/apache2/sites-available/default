@@ -1,0 +1,24 @@
+<VirtualHost *:80>
+
+	ServerAdmin webmaster@localhost
+	DocumentRoot /home/ninjascript/eight-arms.com
+
+	<Directory /home/ninjascript/eight-arms.com>
+	    Options Indexes FollowSymLinks
+	    AllowOverride None
+	    RewriteEngine On
+	    RewriteBase /
+	    RewriteRule ^index\.php$ - [L]
+	    RewriteCond %{REQUEST_FILENAME} !-f
+	    RewriteCond %{REQUEST_FILENAME} !-d
+	    RewriteRule . /index.php [L]
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/app.error.log
+	CustomLog ${APACHE_LOG_DIR}/app.access.log combined
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+</VirtualHost>
