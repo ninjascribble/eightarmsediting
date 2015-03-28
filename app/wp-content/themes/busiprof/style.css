@@ -171,8 +171,9 @@ font-family: OpenSans-Regular;
 	-webkit-box-shadow: 0px 5px 5px #b7b6b6;
      -moz-box-shadow: 0px 5px 5px #b7b6b6;
           box-shadow: 0px 5px 5px #b7b6b6;
-	
-	
+	background-size: cover;
+  background-position: top center;
+  height: 380px;
 }
 .busi_slider_image{height: auto; max-width: 100%;}
 .slider_desc{
@@ -187,6 +188,8 @@ font-family: OpenSans-Regular;
 	padding: 10px 20px;
 	overflow: hidden;
 	border-radius: 10px 0px 0px 10px;
+  float: right;
+  max-width: 480px;
 }
 .slide_content h2{
 	color: #FFFFFF;
@@ -1838,13 +1841,22 @@ text-align: center;
 
 /*@ Media Responsive Css-------*/
 
-@media only screen and (min-width: 960px) and (max-width: 1200px) { }
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+.main_slider { height: 320px; }
+.slide_content h2 { font-size: 22px; }
 .search_btn { margin-bottom: 10px !important; }
 .submit_search { margin-bottom: 10px; }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) { 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.main_slider { height: 260px; }
+.header_top_slide { font-size: 24px; }
+.slider_desc { bottom: 8px; }
+.slide_content { float: none; max-width: 100%; border-radius: 0; }
+.slide_content h2 { font-size: 18px; }
 .search_btn { margin-bottom: 10px !important; }
 .submit_search { margin-bottom: 10px; }
 .widget_section .span3 { margin: 0 0 30px; }
@@ -1856,11 +1868,11 @@ text-align: center;
 .sidebar .tagcloud, .sidebar .textwidget { padding-left: 0px; }
 .sidebar .widget #searchform { padding-left: 0px; }
 .widget_section .span3 { float: left !important; }
-
-
 }
 
 @media only screen and (min-width: 200px) and (max-width: 480px) { 
+.main_slider { height: 120px; }
+.header_top_slide { font-size: 18px; padding: 6px; }
 .search_btn { margin-bottom: 10px !important; }
 .submit_search { margin-bottom: 10px; }
 .widget div#calendar_wrap table > thead > tr > th, .widget_section div#calendar_wrap table > thead > tr > th { padding: 5px; }

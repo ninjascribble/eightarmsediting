@@ -8,11 +8,10 @@
   <?php } ?>
 </div>
 <?php if($current_options['slider_image']!='') {?>
-<div class="main_slider">
-  <img alt="webriti" class="slider_img busi_slider_image" src="<?php echo esc_url($current_options['slider_image']); ?>">
+<div class="main_slider" style="background-image: url(<?php echo esc_url($current_options['slider_image']); ?>)">
   <?php } ?>
   <div class="row-fluid slider_desc">
-    <div class="span5 offset7 slide_content">
+    <div class="slide_content">
       <?php if($current_options['caption_head']!='') {?>
       <h2><?php esc_html_e($current_options['caption_head']); ?></h2>
       <?php } else {?>
