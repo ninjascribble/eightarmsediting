@@ -37,11 +37,6 @@
       <div class="navbar" id="busimenu">
         <div class="navbar-inner">
           <div class="container">
-            <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </a>
             <?php 	if($busiprof_current_options['upload_image']!='') { ?>
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand">
             <img src="<?php echo esc_url($busiprof_current_options['upload_image']); ?>"  alt="Logo" class="logo-img" />
@@ -51,7 +46,7 @@
             <img alt="Logo" src="<?php echo get_template_directory_uri();?>/images/logo.png">
             </a>
             <?php } ?>
-            <div class="nav-collapse collapse navbar-responsive-collapse">
+            <div class="navbar-responsive-collapse">
               <?php
                 wp_nav_menu( array(  
                 	'theme_location' => 'primary',

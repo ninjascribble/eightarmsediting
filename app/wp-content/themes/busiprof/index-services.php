@@ -17,6 +17,16 @@
     </p>
     <?php } ?>
   </div>
+
+  <div class="services_more_btn">
+    <?php if($current_options['service_link_btn']!='') {?>
+    <a href="<?php echo esc_url($current_options['service_link_btn']); ?>">
+    <?php } ?>  
+    <?php if($current_options['service_button_value']!='') {?>
+    <?php esc_html_e($current_options['service_button_value']); ?></a>
+    <?php } ?>  
+  </div>
+
   <div class="row-fluid service_section">
     <div class="span3">
       <div class="services_cols_mn">
@@ -69,15 +79,6 @@
         <p><?php esc_html_e($current_options['service_text_four']); ?></p>
         <?php } ?>	
       </div>
-    </div>
-    
-    <div class="services_more_btn">
-	<?php if($current_options['service_link_btn']!='') {?>
-      <a href="<?php echo esc_url($current_options['service_link_btn']); ?>">
-      <?php } ?>	
-      <?php if($current_options['service_button_value']!='') {?>
-      <?php esc_html_e($current_options['service_button_value']); ?></a>
-      <?php } ?>	
     </div>
   </div>
 </div>

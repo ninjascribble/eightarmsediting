@@ -147,14 +147,14 @@ font-family: OpenSans-Regular;
 /* ---------Busiprof All Css------- */
 .logo-img{height:40px;width:110px;}
 .header_top_slide{
-    background: #222629;
+    background: #344656;
     color: #ffffff;
     font-size: 26px;
 	text-align: center;
     font-weight: 200;
     line-height: 30px;
     margin-bottom: 0;
-    padding: 18px 10px;
+    padding: 8px 10px 3px 10px;
 	
 }
 .main_slider{
@@ -275,10 +275,10 @@ font-family: OpenSans-Regular;
 .services_more_btn {
     margin: 0 auto;
     width: 170px;
+    text-align: center;
 }
 .services_more_btn a {
 	color: #FFFFFF;
-	float: left;
 	font-family: 'montserratregular';
 	font-size: 12px;
 	line-height: 30px;
@@ -1851,6 +1851,15 @@ text-align: center;
 .submit_search { margin-bottom: 10px; }
 }
 
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+.services_top_mn { padding-bottom: 0; }
+.services_top_mn h2 { font-size: 24px; }
+.services_more_btn a { margin-top: 12px; margin-bottom: 0px; }
+.services_cols_mn p { margin: 5px 10px; }
+.services_cols_mn h2 { margin-bottom: 0; }
+.services_cols_mn span { margin-top: 10px; margin-bottom: 4px; padding-bottom: 0; }
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .main_slider { height: 260px; }
 .header_top_slide { font-size: 24px; }
@@ -1871,7 +1880,7 @@ text-align: center;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 480px) { 
-.main_slider { height: 120px; }
+.main_slider { height: 120px; margin-bottom: 14px; }
 .header_top_slide { font-size: 18px; padding: 6px; }
 .search_btn { margin-bottom: 10px !important; }
 .submit_search { margin-bottom: 10px; }
@@ -1887,5 +1896,30 @@ text-align: center;
 .sidebar .widget #searchform { padding-left: 0px; }
 .widget_section .span3 { float: left !important; }
 
+.navbar-responsive-collapse {
+  clear: both;
+  float: none;
+}
+
+.navbar#busimenu .container {
+  text-align: center;
+}
+
+.navbar#busimenu .brand {
+  display: inline-block;
+  float: none;
+}
+
+.navbar#busimenu .nav {
+  float: none;
+  text-align: center;
+}
+
+.navbar#busimenu .nav > li {
+  border: 0;
+  display: inline-block;
+  line-height: 0;
+  float: none;
+}
 
 }
